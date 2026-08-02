@@ -28,10 +28,10 @@
     }
   }
 </script>
-<script>document.title = 'HEAD CONFIG OK';</script>
+<script>document.write('<div style="position:fixed;top:0;left:0;background:red;color:#fff;padding:10px;z-index:99999;">HEAD OK</div>');</script>
 
 <!-- ===== Font Awesome 图标库（JS版） ===== -->
-<script src="assets/lib/fontawesome/all.min.js"></script>
+<!-- <script src="assets/lib/fontawesome/all.min.js"></script> -->
 
 <!-- ===== Swiper 轮播 ===== -->
 <link rel="stylesheet" href="assets/lib/swiper/swiper-bundle.min.css">
@@ -142,26 +142,28 @@
 </div>
 
 <!-- ===== JS 依赖库 ===== -->
-<script src="assets/lib/swiper/swiper-bundle.min.js"></script>
-<script src="assets/lib/aos/aos.js"></script>
-<!-- <script src="assets/lib/chartjs/chart.umd.min.js"></script> -->
+<script>document.write('<div style="position:fixed;top:60px;left:0;background:blue;color:#fff;padding:10px;z-index:99999;">BEFORE SWIPER OK</div>');</script>
+<!-- <script src="assets/lib/swiper/swiper-bundle.min.js"></script> --><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:10px;right:10px;background:lightblue;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">SWIPER OK</div>');</script>
+<!-- <script src="assets/lib/aos/aos.js"></script> --><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:32px;right:10px;background:lightgreen;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">AOS-LIB OK</div>');</script>
+<!-- <script src="assets/lib/chartjs/chart.umd.min.js"></script> --><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:54px;right:10px;background:lightyellow;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">CHART OK</div>');</script>
 
 <!-- ===== 项目 JS 模块（按依赖顺序加载） ===== -->
-<script src="assets/js/config.js"></script>
-<script src="assets/js/utils.js"></script>
-<script src="assets/js/store.js"></script>
-<script src="assets/js/api.js"></script>
-<script src="assets/js/auth.js"></script>
-<script src="assets/js/components.js"></script>
-<script src="assets/js/router.js"></script>
+<script src="assets/js/config.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:76px;right:10px;background:lightpink;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">CONFIG OK</div>');</script>
+<script src="assets/js/utils.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:98px;right:10px;background:lightcoral;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">UTILS OK</div>');</script>
+<script src="assets/js/store.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:120px;right:10px;background:lightseagreen;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">STORE OK</div>');</script>
+<script src="assets/js/api.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:142px;right:10px;background:lightsalmon;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">API OK</div>');</script>
+<script src="assets/js/auth.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:164px;right:10px;background:lightsteelblue;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">AUTH OK</div>');</script>
+<script src="assets/js/components.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:186px;right:10px;background:lightgoldenrodyellow;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">COMPONENTS OK</div>');</script>
+<script src="assets/js/router.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:208px;right:10px;background:lightcyan;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">ROUTER OK</div>');</script>
 <script>document.title = 'ROUTER OK';</script>
-<!-- <script src="assets/js/pages/home.js"></script> -->
+<script src="assets/js/pages/home.js"></script><script>document.body.insertAdjacentHTML("beforeend", '<div style="position:fixed;top:230px;right:10px;background:lavender;color:#000;padding:3px 8px;font-size:11px;z-index:99999;border-radius:3px;">HOME OK</div>');</script>
 <!-- <script src="assets/js/pages/user.js"></script> -->
 <!-- <script src="assets/js/pages/news.js"></script> -->
 <!-- <script src="assets/js/pages/shop.js"></script> -->
 <!-- <script src="assets/js/pages/admin.js"></script> -->
 <script>document.title = 'DEBUG OK';</script>
-<script src="assets/js/app.js"></script>
+<script>document.write('<div style="position:fixed;top:90px;left:0;background:purple;color:#fff;padding:10px;z-index:99999;">BEFORE APP.JS OK</div>');</script>
+<script src="assets/js/app.js?v=3"></script>
 </body>
 </html>
 
